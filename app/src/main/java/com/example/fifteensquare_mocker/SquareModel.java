@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class SquareModel {
-
     public static final int SQUARE_SIZE = 250;
     public float x = 10;
     public float y = 10;

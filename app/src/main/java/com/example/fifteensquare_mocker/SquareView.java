@@ -13,7 +13,6 @@ import java.util.Random;
 import java.util.Set;
 
 public class SquareView extends SurfaceView {
-
     public SquareModel model;
     public ArrayList<SquareModel> squares = new ArrayList<SquareModel>();
     private int size = model.SQUARE_SIZE;

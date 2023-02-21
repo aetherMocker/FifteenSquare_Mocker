@@ -122,6 +122,7 @@ public class SquareController implements View.OnTouchListener, View.OnClickListe
         return true;
     }//onTouch
 
+
     @Override
     public void onClick(View view) {
         squareView.reset();
