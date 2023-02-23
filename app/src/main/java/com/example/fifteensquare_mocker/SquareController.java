@@ -73,7 +73,6 @@ public class SquareController implements View.OnTouchListener, View.OnClickListe
             else {
                 holder.y = motionEvent.getY() - squareModel.SQUARE_SIZE / 2;
             }
-
             squareView.invalidate();
         }
         else if (motionEvent.getActionMasked() == 1) { //after square is released
@@ -103,6 +102,10 @@ public class SquareController implements View.OnTouchListener, View.OnClickListe
                     if(squareView.squares.get(i).number != i+1) {
                         success = false;
                         //Log.d("success", "false");
+                        squareView.invalidate();
+                    }
+                    else {
+                        success = true;
                         squareView.invalidate();
                     }
                 }

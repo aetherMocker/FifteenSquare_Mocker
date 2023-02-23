@@ -66,7 +66,8 @@ public class SquareView extends SurfaceView {
     //assign each square a number with random!
     public void setNumbers(ArrayList<SquareModel> s) {
         Set<Integer> set = new HashSet<>();
-
+        //create a list of unique numbers and make sure they don't copy each other
+        //using a hashset (my dad's recommendation) because they all represent unique objects
         for(int i = 0; i < s.size() -1; ++i) {
             int x;
             do {
@@ -77,7 +78,7 @@ public class SquareView extends SurfaceView {
 
             s.get(i).number = x;
         }
-        s.get(15).number = 16;
+        s.get(15).number = 16; //emptySquare is always 16
     }//setNumbers
 
     public void onDraw(Canvas canvas) {
